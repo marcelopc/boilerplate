@@ -1,13 +1,8 @@
-const express = require('express')
+import dotenv from 'dotenv'
+import dotenvExpand from 'dotenv-expand'
+import Server from '@infrastructure/web/express'
 
-const PORT = 3000
+dotenvExpand.expand(dotenv.config())
+const PORT = parseInt(process.env.PORT as string)
 
-const app = express()
-
-app.get('/', (req: any, res:any) => {
-    res.send({message:'Hello World!'})
-})
-
-app.listen(PORT, ()=>{
-    console.log("Server started on port " + PORT)
-})
+Server.start(PORT)
