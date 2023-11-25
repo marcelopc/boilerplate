@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm install && ts-node-dev -r tsconfig-paths/register --respawn --transpile-only  --no-notify --inspect -- ./src/index.ts",
-    "build": "tsc -p tsconfig.build.json && tsc-alias"
+    "start": "pnpm install && tsx watch ./src/index.ts",
+    "build": "tsup src"
   },
   "keywords": [],
   "author": "marcelopc",
@@ -22,9 +22,10 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
-    "ts-node-dev": "^2.0.0",
     "tsc-alias": "^1.8.8",
     "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.0.1",
+    "tsx": "^4.5.0",
     "typescript": "^5.3.2"
   },
   "dependencies": {
