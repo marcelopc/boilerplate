@@ -30,7 +30,7 @@ Como Usar
 
 ### Rodando o Projeto
 
-*   Para iniciar o servidor em modo de desenvolvimento: `docker-compose up`
+*   Para iniciar o servidor em modo de desenvolvimento: `make up`
 *   Para rodar os testes: `npm test`
 
 ### Estrutura do Projeto
