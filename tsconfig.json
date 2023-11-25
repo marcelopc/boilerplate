@@ -26,14 +26,13 @@
     },
     "rootDirs": [
       "./src",
-      "./test"
     ],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
   "include": [
     "./src/**/*.ts",
-    "./test/**/*.ts",
+    "vite.config.ts"
     ],
   "exclude": [
     "./node_modules/*",

@@ -1,6 +1,11 @@
 boilerplate
 
+- Arquitetura hexagonal
 - docker
 - typscript
-- ts-node-dev
+- dotenv
+- tsx
+- tsup
+- eslint
 - express
+- vitest
